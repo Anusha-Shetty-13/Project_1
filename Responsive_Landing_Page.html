@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing webpage</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        html,body{
+             width:100%;
+             height:100% ;
+        }
+        #main{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            /* background-color: red; */
+        }
+        #left{
+            width: 40%;
+            height: 100%;
+            /* background-color: green; */
+            position: relative;
+        }
+        #right{
+            width: 60%;
+            height: 100%;
+            background-color: yellow;
+        }
+        #righttop{
+            display: flex;
+            width: 100%;
+            height:50% ;
+            background-color:bisque;
+        }
+        #rightbottom{
+            width: 100%;
+            height:50% ;
+            background-color:rgb(177, 107, 22);
+            background-image: url(https://plus.unsplash.com/premium_photo-1714618868161-443b90fbac25?q=80&w=949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-position:top;
+        }
+        #rtopleft{
+            width: 55%;
+            height: 100%;
+            /* background-color: darkgray; */
+            background-image: url(https://plus.unsplash.com/premium_photo-1671013032586-3e9a5c49ce3c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size:cover ;
+            background-position:center;
+        }
+        #rtopright{
+            width: 45%;
+            height: 100%;
+            background-color:rgb(160, 175, 22);
+            background-image: url(https://images.unsplash.com/photo-1551888419-7b7a520fe0ca?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-position: center;
+        }
+        #lnav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px 30px;
+            /* background-color: pink; */
+            
+        }
+        #lnav i{
+            margin-left: -15px;
+        }
+        #lnavr{
+            display: flex;
+            align-items: center;
+        }
+        #lnavr a{
+            margin-right: 35px;
+            text-decoration: none;
+            color: #000;
+            font-weight:500;
+            font-size: 14px;
+            border-bottom:1px solid #666363;
+            padding-bottom: 5px;
+        }
+        #lnavr i{
+            color: royalblue;
+            padding-bottom: 5px;
+        }
+        #left #textcenter{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #textcenter h1{
+            font-size: 90px;
+            font-weight: 900;
+            
+        }
+        #textcenter p{
+            opacity: .6;
+            font-size: 12px;
+            line-height: 20px;
+            margin-top: 3px;
+            margin-bottom: 15px;
+        }
+        #textcenter a{
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid #666363;
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 600;
+            opacity: .6;
+
+        }
+       @media(max-width:500px){
+        #main{
+            flex-direction: column;
+        }
+        #main #left{
+            width: 100%;
+        }
+        #main #right{
+            width: 100%;
+        }
+       }
+    </style>
+</head>
+<body>
+     <div id="main">
+        <div id="left">
+            <div id="lnav"><i class="ri-arrow-left-line"></i>
+                <div id="lnavr">
+                    <a href="">About</a><a href="">Work</a>
+                    <i class="ri-linkedin-box-fill"></i>
+                </div>
+            </div>
+            <div id="textcenter">
+                <h1>Hello,</h1>
+                <p>Oh. You need a little dummy text for your mockup? How quaint</p>
+                <a href="">Read</a>
+            </div>
+        </div>
+        <div id="right">
+            <div id="righttop"> 
+                <div id="rtopleft">
+
+                </div>
+                <div id="rtopright"></div>
+            </div>
+            <div id="rightbottom"></div>
+        </div>
+     </div>
+</body>
+</html>
